@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      } 
+      
+       .topnav {
+        
+        background-color: #333;
+      } 
+      
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover {
+        background-color: rgb(12, 12, 12);
+        color: rgb(241, 236, 236);
+      }
+      
+       
+      #w{
+          width: 786px;
+          padding-top: 137px;
+          padding-left: 328px;
+      
+      }
+      /* .ide{
+          background-color: #c61313;
+      } */
+      h1{
+          padding-top: 137px;
+          padding-left: 613px;
+          color: white;
+      }
+      #l{
+          color: aliceblue;
+      }
+      p{
+        color: rgb(254, 248, 248);
+      }
+          </style>
+</head>
+<body>
+    <div class="topnav">
+        <a  href="Web.html">Home</a>
+        <a href="News.html">News</a>
+          <a href="contact.html">Contact</a>
+        
+       <div style="padding-left:16px">
+        <H1>Python Introduction</H1>
+        <p>Python Introduction
+
+    bookmark_border
+    Prelude
+    Welcome to Google's Python online tutorial. It is based on the introductory Python course offered internally. As mentioned on the setup page, this material covers Python 3.
+    <br>
+    If you're seeking a companion MOOC course, try the ones from Udacity and Coursera (intro to programming [beginners] or intro to Python). Finally, if you're seeking self-paced online learning without watching videos, try the ones listed towards the end of this post — each feature learning content as well as a Python interactive interpreter you can practice with. What's this "interpreter" we mention? You'll find out in the next section!
+    <br>
+    Language Introduction
+    Python is a dynamic, interpreted (bytecode-compiled) language. There are no type declarations of variables, parameters, functions, or methods in source code. This makes the code short and flexible, and you lose the compile-time type checking of the source code. Python tracks the types of all values at runtime and flags code that does not make sense as it runs.
+    <br>
+    An excellent way to see how Python code works is to run the Python interpreter and type code right into it. If you ever have a question like, "What happens if I add an int to a list?" Just typing it into the Python interpreter is a fast and likely the best way to see what happens. (See below to see what really happens!)
+    <br>
+    
+    $ python    &nbsp;    ## Run the Python interpreter
+    Python 3.X.X (XXX, XXX XX XXXX, 03:41:42) [XXX] on XXX
+    Type "help", &nbsp;"copyright", "credits" or "license" for more information.
+    >>> a = 6    &nbsp;&nbsp;   ## set a variable in this interpreter session
+    >>> a      &nbsp;&nbsp;     ## entering an expression prints its value
+    <br>
+    6
+    <br>
+    >>> a + 2
+    <br>
+    8
+    <br>
+    >>> a = 'hi'  &nbsp;  ## 'a' can hold a string just as well
+    <br>
+    >>> a
+    <br>
+    'hi'
+    <br>
+    >>> len(a)    &nbsp;  ## call the len() function on a string
+    <br>
+    2
+    <br>
+    >>> a + len(a)  ## try something that doesn't work
+    <br>
+    Traceback (most recent call last):
+    <br>
+      File "", line 1, in
+      <br> 
+    TypeError: can only concatenate str (not "int") to str
+    >>> a + str(len(a))  ## probably what you really wanted
+    <br>
+    'hi2'
+    <br>
+    >>> foo    &nbsp;     ## try something else that doesn't work
+    <br>
+    Traceback (most recent call last):
+    <br>
+      File "", line 1, in
+      <br> 
+    NameError: name 'foo' is not defined
+    <br>
+    >>> ^D      &nbsp;    ## type CTRL-d to exit (CTRL-z in Windows/DOS terminal)
+    <br>
+    The two lines python prints after you type python and before the >>> prompt tells you about the version of python you're using and where it was built. As long as the first thing printed is "Python 3.", these examples should work for you.
+    <br>
+    As you can see above, it's easy to experiment with variables and operators. Also, the interpreter throws, or "raises" in Python parlance, a runtime error if the code tries to read a variable that has not been assigned a value. Like C++ and Java, Python is case sensitive so "a" and "A" are different variables. The end of a line marks the end of a statement, so unlike C++ and Java, Python does not require a semicolon at the end of each statement. Comments begin with a '#' and extend to the end of the line.
+    <br>
+    Python source code
+    <br>
+    Python source files use the ".py" extension and are called "modules." With a Python module hello.py, the easiest way to run it is with the shell command "python hello.py Alice" which calls the Python interpreter to execute the code in hello.py, passing it the command line argument "Alice". See the official docs page on all the different options you have when running Python from the command-line.
+    <br>
+    Here's a very simple hello.py program (notice that blocks of code are delimited strictly using indentation rather than curly braces — more on this later!):
+    <br>
+    
+    #!/usr/bin/env python
+    <br>
+    # import modules used here -- sys is a very standard one
+    <br>
+    import sys
+    <br>
+    # Gather our code in a main() function
+    <br>
+    def main():
+        print('Hello there', sys.argv[1])
+        <br>
+        # Command line args are in sys.argv[1], sys.argv[2] ...
+        <br>
+        # sys.argv[0] is the script name itself and can be ignored
+        <br>
+    
+    # Standard boilerplate to call the main() function to begin
+    <br>
+    # the program.
+    <br>
+    if __name__ == '__main__':
+    <br>
+        main()</p>
+</body>
+</html>
